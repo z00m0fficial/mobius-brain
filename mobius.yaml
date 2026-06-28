@@ -1,0 +1,51 @@
+mobius:
+  repository: mobius-brain
+  product: Mobius OS
+  capability: System Cognition
+  department: Mobius Brain
+  owner: Mobius Technologies
+  mission: Coordinate Mobius departments into one unified organizational intelligence system.
+  maturity: implemented
+  consumes:
+    - FounderInput
+    - RequestReceived
+    - IntentClassified
+    - MemoryLookupCompleted
+    - RouteSelected
+    - ProviderExecuted
+    - PulseMetricRecorded
+    - MemoryEventCreated
+    - McmsAuditRecorded
+  produces:
+    - BrainPlan
+    - OrchestrationState
+    - ImprovementRecommendation
+  schemas:
+    - BrainPlan
+    - BrainStep
+  events:
+    - BrainPlanCreated
+    - BrainStepCompleted
+  dependencies:
+    - mobius-api
+    - atlas-core
+    - mobius-memory
+    - mobius-router
+    - mobius-provider-engine
+    - mobius-pulse
+    - mobius-mcms
+    - mobius-command-center
+  dependents:
+    - mobius-command-center
+    - sonic
+  pulse_metrics:
+    - loop-completion-rate
+    - orchestration-latency
+    - blocked-step-count
+  memory_events:
+    - brain-plan-created
+    - improvement-recommendation-created
+  architecture_version: Enterprise Alpha v0.1
+  genesis_version: Genesis v1.0
+  canon_version: Canon v1.0
+  sync_status: synchronized
