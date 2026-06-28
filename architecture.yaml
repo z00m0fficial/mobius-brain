@@ -1,0 +1,17 @@
+repository: mobius-brain
+version: 0.1.0
+status: alpha
+layer: system-cognition
+department: Mobius Brain
+service: System Orchestration
+mission: Coordinate Mobius departments into a unified organizational intelligence system.
+capabilities:
+  - intelligence-loop-orchestration
+  - cross-service-planning
+  - background-reasoning
+  - executive-insight-generation
+  - autonomous-improvement-recommendations
+quality_gates:
+  department_ownership_preserved: true
+  governance_required_for_changes: true
+  no_provider_lock_in: true
