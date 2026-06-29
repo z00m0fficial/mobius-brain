@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "echo tests pending",
+    "test": "node --test dist/test/**/*.test.js",
     "validate": "npm run build && npm run test"
   },
   "license": "UNLICENSED",
